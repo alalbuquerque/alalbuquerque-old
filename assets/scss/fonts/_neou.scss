@@ -1,0 +1,26 @@
+@mixin fontdef($FontType: "Regular") {
+  src: url('../fonts/neou/#{$FontType}/Neou-#{$FontType}.eot');
+  src: url('../fonts/neou/#{$FontType}/Neou-#{$FontType}.eot') format('embedded-opentype'),
+       url('../fonts/neou/#{$FontType}/Neou-#{$FontType}.woff2') format('woff2'),
+       url('../fonts/neou/#{$FontType}/Neou-#{$FontType}.woff') format('woff'),
+       url('../fonts/neou/#{$FontType}/Neou-#{$FontType}.ttf') format('truetype'),
+       url('../fonts/neou/#{$FontType}/Neou-#{$FontType}.svg') format('svg');
+}
+////////////////
+//  REGULAR   //
+////////////////
+@font-face {
+  font-family: 'Neou';
+  @include fontdef("Thin");
+  font-weight: normal;
+  font-style: normal;
+}
+/////////////
+//  BOLD   //
+/////////////
+@font-face {
+  font-family: 'Neou';
+  @include fontdef("Bold");
+  font-weight: 600;
+  font-style: normal;
+}

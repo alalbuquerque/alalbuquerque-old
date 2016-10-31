@@ -1,0 +1,17 @@
+@mixin fontdef() {
+  src: url('../fonts/bringshoot/bringshoot.eot');
+  src: url('../fonts/bringshoot/bringshoot.eot') format('embedded-opentype'),
+       url('../fonts/bringshoot/bringshoot.woff2') format('woff2'),
+       url('../fonts/bringshoot/bringshoot.woff') format('woff'),
+       url('../fonts/bringshoot/bringshoot.ttf') format('truetype'),
+       url('../fonts/bringshoot/bringshoot.svg') format('svg');
+}
+////////////////
+//  REGULAR   //
+////////////////
+@font-face {
+  font-family: 'Bringshoot';
+  @include fontdef();
+  font-weight: normal;
+  font-style: normal;
+}

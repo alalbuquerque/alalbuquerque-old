@@ -1,0 +1,109 @@
+@mixin fontdef($FontType: "100") {
+  src: url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.eot');
+  src: url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.eot') format('embedded-opentype'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.woff2') format('woff2'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.woff') format('woff'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.ttf') format('truetype'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.svg') format('svg');
+}
+@mixin fontdef($FontType: "300") {
+  src: url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.eot');
+  src: url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.eot') format('embedded-opentype'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.woff2') format('woff2'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.woff') format('woff'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.ttf') format('truetype'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.svg') format('svg');
+}
+@mixin fontdef($FontType: "500") {
+  src: url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.eot');
+  src: url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.eot') format('embedded-opentype'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.woff2') format('woff2'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.woff') format('woff'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.ttf') format('truetype'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.svg') format('svg');
+}
+@mixin fontdef($FontType: "700") {
+  src: url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.eot');
+  src: url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.eot') format('embedded-opentype'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.woff2') format('woff2'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.woff') format('woff'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.ttf') format('truetype'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.svg') format('svg');
+}
+@mixin fontdef($FontType: "900") {
+  src: url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.eot');
+  src: url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.eot') format('embedded-opentype'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.woff2') format('woff2'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.woff') format('woff'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.ttf') format('truetype'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.svg') format('svg');
+}
+@mixin fontdef($FontType: "1000") {
+  src: url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.eot');
+  src: url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.eot') format('embedded-opentype'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.woff2') format('woff2'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.woff') format('woff'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.ttf') format('truetype'),
+  url('../fonts/museo/#{$FontType}/MuseoSlab-#{$FontType}.svg') format('svg');
+}
+
+
+////////////////
+//    Thin    //
+////////////////
+@font-face {
+  font-family: 'Museo Slab';
+  @include fontdef("100");
+  font-weight: 100;
+  font-style: normal;
+}
+
+////////////////
+//    Thin    //
+////////////////
+@font-face {
+  font-family: 'Museo Slab';
+  @include fontdef("300");
+  font-weight: 300;
+  font-style: normal;
+}
+
+////////////////
+//    Thin    //
+////////////////
+@font-face {
+  font-family: 'Museo Slab';
+  @include fontdef("500");
+  font-weight: 500;
+  font-style: normal;
+}
+
+////////////////
+//    Thin    //
+////////////////
+@font-face {
+  font-family: 'Museo Slab';
+  @include fontdef("700");
+  font-weight: 700;
+  font-style: normal;
+}
+
+////////////////
+//    Thin    //
+////////////////
+@font-face {
+  font-family: 'Museo Slab';
+  @include fontdef("900");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/////////////
+//  BOLD   //
+/////////////
+@font-face {
+  font-family: 'Museo Slab';
+  @include fontdef("1000");
+  font-weight: bolder;
+  font-style: normal;
+}

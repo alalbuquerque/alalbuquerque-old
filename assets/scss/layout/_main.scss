@@ -1,0 +1,59 @@
+html, body {
+  height: 100%;
+  background: $lighter-color1;
+  color: $darker-color5;
+  font-family: $default-font;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 0!important;
+  margin-left: 0;
+  margin-right: 0;
+  //md, lg
+  @media (min-width: $screen-md-min) {
+    text-align: left;
+  }
+  
+
+  &.loading {
+    overflow: hidden;
+    background: #000;
+    height: 100%;
+    width: 100%;
+  }
+
+
+//overflow-x: hidden;
+::selection {
+  background: $secondary-color4; /* WebKit/Blink Browsers */
+  color: $primary-color;
+}
+* {
+  box-sizing: border-box;
+}
+&.menu-opened {
+  overflow: hidden;
+}
+@media (max-width: $screen-sm-min) {
+
+}
+.modal-backdrop {
+  background: $primary-color;
+    //opacity: 0.85;
+    &.in {
+      opacity: 0.85;
+    }
+  }
+}
+#loading {
+  overflow: hidden;
+  background: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  z-index: 999999;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+} 
